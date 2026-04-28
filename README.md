@@ -1,0 +1,56 @@
+# VAANI CR8 Exportable Project Files
+
+## package.json
+
+```json
+{
+  "name": "vaani-cr8-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.460.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
+```
+
+## index.html
+
+```html
+<!doctype html>
+<html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'><title>VAANI CR8</title><script type='module' src='/src/main.jsx'></script></head><body><div id='root'></div></body></html>
+```
+
+## src/main.jsx
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+```
+
+## src/App.jsx
+
+```jsx
+import React from 'react';
+export default function App(){return <div style={{padding:'40px',fontFamily:'Arial',background:'#000',color:'#fff',minHeight:'100vh'}}><h1 style={{color:'#3b82f6'}}>VAANI CR8</h1><p>Your Imagination, Our Creation</p><p>3D Prints & Services</p></div>}
+```
+
+## How to Use
+
+1. Create these files in one folder.
+2. Upload to GitHub.
+3. Import repo into Vercel.
+4. Deploy live.
+
